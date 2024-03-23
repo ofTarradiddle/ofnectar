@@ -3,41 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Clinical Trials</title>
+    <title>Join Social Clinical Trials</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="nectar1.webp" alt="A welcoming community of researchers">
-        <h1>Social Clinical Trials</h1>
-        <p>Join us in uncovering the mysteries of human health through community-driven research. </p>
+    <header class="landing-header">
+        <img src="nectar1.webp" alt="A welcoming community of researchers" class="hero-image">
+        <div class="header-content">
+            <h1>Unlock Health Secrets Together</h1>
+            <p>Join our community in pioneering the future of health through social clinical trials.</p>
+            <a href="#signup" class="cta-button">Join Now</a>
+        </div>
     </header>
     <main>
-         <section id="signup">
-            <h2>Sign Up</h2>
-            <form 
-                  action="https://formspree.io/f/mpzvjenw" method="POST"
-                >
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="_replyto" required>
-                
-                <input type="submit" value="Join Now">
+        <section id="signup" class="signup-section">
+            <form action="https://formspree.io/f/mpzvjenw" method="POST">
+                <h2>Sign Up & Start Contributing</h2>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="_replyto" required>
+                </div>
+                <input type="submit" value="Join Now" class="submit-button">
             </form>
         </section>
-        <section id="about">
-            <h2>About Our Trials</h2>
-            <p>Discover how we're revolutionizing health research together.</p>
+        <section id="about" class="about-section">
+            <h2>Our Mission</h2>
+            <p>Learn more about our innovative approach to health research and how you can make a difference.</p>
             <img src="nectar2.webp" alt="Collaborative research">
         </section>
-        <section id="About">
-            <h2>About us</h2>
+        <section class="testimonials-section">
+            <h2>Community Voices</h2>
             <img src="nectar3.webp" alt="Participant testimonial">
-            <p>"Participating in these trials has been a groundbreaking experience for me."</p>
+            <p>"Being part of these trials has not only contributed to medical research but has also been a personally enriching experience."</p>
         </section>
-       
     </main>
 </body>
 </html>
